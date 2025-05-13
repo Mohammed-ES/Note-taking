@@ -1,0 +1,197 @@
+:root {
+    /* Color palette inspired by the student page */
+    --primary-dark: #051937;
+    --primary-gradient: linear-gradient(90deg, #051937 0%, #004d7a 50%, #008793 100%);
+    --blue-gradient: linear-gradient(90deg, #051937 0%, #1565C0 100%);
+    --accent: #f72585;
+    --white: #ffffff;
+    --gray-100: #f8f9fa;
+    --gray-200: #e9ecef;
+    --gray-300: #dee2e6;
+    --gray-600: #6c757d;
+    --gray-700: #495057;
+    --gray-800: #343a40;
+    --border-radius: 12px;
+    --card-radius: 16px;
+    --box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--gray-100);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--gray-800);
+}
+
+.dashboard-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px;
+}
+
+.header-section {
+    background: var(--primary-gradient);
+    border-radius: var(--card-radius);
+    padding: 40px;
+    color: var(--white);
+    margin-bottom: 24px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(5, 25, 55, 0.2);
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.header-logo i {
+    font-size: 2rem;
+}
+
+.platform-name {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.welcome-text {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.welcome-subtitle {
+    opacity: 0.9;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.admin-badge {
+    display: inline-flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.admin-badge i {
+    margin-right: 8px;
+}
+
+.admin-badge .status-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #4ade80;
+    border-radius: 50%;
+    margin-left: 8px;
+    display: inline-block;
+}
+
+.buttons-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.menu-card {
+    background-color: var(--white);
+    border-radius: var(--card-radius);
+    border: 1px solid var(--gray-200);
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--gray-800);
+    transition: var(--transition);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.menu-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border-color: var(--gray-300);
+}
+
+.icon-container {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray-100);
+    border-radius: 12px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.menu-icon {
+    color: #1565C0;
+    font-size: 1.5rem;
+}
+
+.menu-text {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.logout-button {
+    background-color: transparent;
+    border: 1px solid #ef4444;
+    border-radius: var(--card-radius);
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #ef4444;
+    transition: var(--transition);
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-top: 8px;
+}
+
+.logout-button:hover {
+    background-color: #ef4444;
+    color: var(--white);
+}
+
+.logout-button i {
+    margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+    .header-section {
+        padding: 30px;
+    }
+    
+    .welcome-text {
+        font-size: 1.7rem;
+    }
+    
+    .icon-container {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .menu-icon {
+        font-size: 1.3rem;
+    }
+    
+    .menu-text {
+        font-size: 1rem;
+    }
+}

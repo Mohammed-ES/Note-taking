@@ -1,0 +1,79 @@
+Projet_Web/
+├── admin/
+│   ├── dashboard.php               # Tableau de bord administrateur
+│   ├── process_settings.php        # Traitement des paramètres
+│   └── settings.php                # Page de paramètres
+│
+├── assets/
+│   ├── css/
+│   │   ├── auth/                   # Styles pour l'authentification
+│   │   │   ├── login_style.css
+│   │   │   └── register_style.css
+│   │   └── student/                # Styles pour les fonctionnalités étudiant
+│   │       ├── add_note_style.css
+│   │       ├── edit_note_style.css
+│   │       ├── notes_style.css
+│   │       ├── planning_style.css
+│   │       └── quiz_style.css
+│   │
+│   ├── js/
+│   │   ├── auth/                   # Scripts pour l'authentification
+│   │   │   └── login.js
+│   │   └── student/                # Scripts pour les fonctionnalités étudiant
+│   │       ├── edit_student.js
+│   │       ├── planning.js
+│   │       └── student.js
+│   │
+│   └── image/                      # Images et ressources graphiques
+│
+├── auth/
+│   ├── forgot_password.php         # Récupération de mot de passe
+│   ├── login.php                   # Page de connexion
+│   ├── logout_students.php         # Déconnexion pour étudiants
+│   ├── logout.php                  # Déconnexion pour administrateur
+│   ├── process_login.php           # Traitement de connexion
+│   └── register.php                # Inscription
+│
+├── config/
+│   └── connectiondb.php            # Configuration de la base de données
+│
+├── css/                            # Styles supplémentaires (hors assets)
+│   └── account-settings.css
+│
+├── Docs/
+│   ├── Password_Sitution.md        # Documentation sur les mots de passe
+│   └── Readme                      # Documentation générale
+│
+├── html/
+│   └── password_documentation.html # Documentation HTML sur les mots de passe
+│
+├── SQL/
+│   └── notes.sql                   # Script de base de données
+│
+├── student/
+│   ├── add_student.php             # Ajout d'étudiant
+│   ├── css/                        # Styles spécifiques aux pages étudiant
+│   │   ├── add_student_style.css
+│   │   ├── deleted_students_style.css
+│   │   ├── edit_student_style.css
+│   │   └── student_style.css
+│   │
+│   ├── delete__student.php         # Suppression d'étudiant (doublon)
+│   ├── delete_student.php          # Suppression d'étudiant
+│   ├── deleted_students.php        # Liste des étudiants supprimés
+│   ├── edit_student.php            # Modification d'étudiant
+│   ├── notes/                      # Gestion des notes
+│   │   ├── add_note.php
+│   │   ├── edit_note_student.php
+│   │   └── notes_student.php
+│   │
+│   ├── planning/                   # Gestion du planning
+│   │   ├── add_event.php
+│   │   └── planning_student.php
+│   │
+│   ├── restore_all_students.php    # Restauration de tous les étudiants
+│   ├── restore_students.php        # Restauration d'étudiants
+│   ├── student_dashboard.php       # Tableau de bord étudiant
+│   └── student.php                 # Gestion des étudiants
+│
+└── uploads/                        # Dossier pour les fichiers téléchargés
